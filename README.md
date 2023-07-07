@@ -5,8 +5,8 @@ They are not fully working, you can only find about 80% of the goals in a season
 
 The idea is to split up these kind of goals in 10 categories:
 
-*1 Penalty  --> find every penalty goal;
-2) Free Kick Shot --> find every goal made by direct free kick shot;
+1. Penalty  --> find every penalty goal;
+2. Free Kick Shot --> find every goal made by direct free kick shot;
 3) Indirect Free Kick Shot --> find every goal made by indirect free kick shot
 4) Throw in Shot --> find all the goals born from a throw in
 5)Ball Recovery --> find all the goals born from a ball recovery, dividing it in 'Counter Attack Shot' and 'Ball Recovery Shot'
