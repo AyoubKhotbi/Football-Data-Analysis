@@ -5,14 +5,30 @@ They are not fully working, you can only find about 80% of the goals in a season
 
 The idea is to split up these kind of goals in 10 categories:
 
-1. Penalty  --> find every penalty goal;
-2. Free Kick Shot --> find every goal made by direct free kick shot;
-3. Indirect Free Kick Shot --> find every goal made by indirect free kick shot;
-4. Throw in Shot --> find all the goals born from a throw in;
-5. Ball Recovery --> find all the goals born from a ball recovery, dividing it in 'Counter Attack Shot' and 'Ball Recovery Shot';
-6. positional_attacks --> dcdwc;
-7. corner_kick_schema --> find every corner; 
-8. direct_corner_kick -->;
-9. Own goal --> find all own goals;
-10. Goalkeeper's bounce --> find all the goal born from a failed save by the goalkeeper, who put the ball back into the field
+1. Penalty shot ---> Find every penalty goal
 
+2. Freekick shot ---> Find every freekick that has been kicked to score directly
+
+3. Owngoal ---> Find every own goal
+
+4. Counter attack and Ball recovery ---> Find every ball recovery that leads to a goal, each action can be divided in counter attack or ball recovery based on the location of the recovery and the time between it and the goal and the number of events between the recovery and the goal
+
+5. Throw-in shot ---> Find every goal that starts with a throw-in and leads to a goal within a certain amount of events
+
+6. Direct corner shot ---> Find every goal scored directly from the corner kick
+
+7. Corner schema ---> Find every goal scored starting with a corner kick, the category of the goal could be difference based on how the action went
+
+8. Freekick schema ---> Find every goal scored starting with a freekick, the category of the goal could be difference based on how the action went
+
+9. Positional attack ---> Find every goal scored with a built action that has at least a certain amount of events before the goal
+
+10. Goalkeeper's bounce ---> Find every goal that happens after a goalkeeper's save with the ball still playable
+
+WYSCOUT GLOSSARY: https://dataglossary.wyscout.com/ WYSCOUT API DOCS: https://apidocs.wyscout.com/
+
+Each function returns a pandas dataframe with goals that have the shot type of the function, the number of attempted shots (including both shots and goals) and the number of goals.
+
+TO USE MAIN FUNCTIONS YOU'LL NEED SOME SIDE FUNCTIONS, NOT ALL OF THEM. YOU CAN FIND THEM INSIDE THE PROPER FOLDER.
+
+There also alternative written functions that do the same work as the other but these are written based on SoccerAction package. Fucntions based on this package are slitly different from the original ones but the goal is the same. I've tried this package trying to cover the lack of the true functions but there is still the same problem of accuaracy. You can find SoccerAction based function inside their proper folder.
