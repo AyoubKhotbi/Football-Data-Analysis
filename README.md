@@ -3,7 +3,7 @@
 Wyscout-based functions help you define how a football team can score during a match.
 They are not fully working, you can only find about 80% of the goals in a season and goals may not be categorized right.
 
-The idea is to split up these kind of goals in 10 categories:
+The idea is to split up these kinds of goals INTO:
 
 1. Penalty shot ---> Find every penalty goal
 
@@ -31,4 +31,4 @@ Each function returns a pandas dataframe with goals that have the shot type of t
 
 TO USE MAIN FUNCTIONS YOU'LL NEED SOME SIDE FUNCTIONS, NOT ALL OF THEM. YOU CAN FIND THEM INSIDE THE PROPER FOLDER.
 
-There also alternative written functions that do the same work as the other but these are written based on SoccerAction package. Fucntions based on this package are slitly different from the original ones but the goal is the same. I've tried this package trying to cover the lack of the true functions but there is still the same problem of accuaracy. You can find SoccerAction based function inside their proper folder.
+There also alternative written functions that do the same work as the other but these are written based on SoccerAction package. Fucntions based on this package are slitly different from the original ones but the goal is the same. I've tried this package trying to cover the lack of the true functions but there is still the same problem of accuracy. You can find SoccerAction based function inside their proper folder.
