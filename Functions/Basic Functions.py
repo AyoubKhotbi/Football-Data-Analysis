@@ -26,7 +26,7 @@ def season(competitionwyId):
 
   return season
 -------------------------------------------------------------------------------------------
-def get_team_stagione_corrente(competitionId): #you can't get old seasons
+def get_team_current_season(competitionId): #you can't get old seasons
   url = base_url.format(f'/competitions/{competitionId}/teams')
 
   response = requests.get(url, auth = HTTPBasicAuth(username, password))
